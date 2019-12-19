@@ -46,8 +46,10 @@ window.addEventListener("load", function() {
          }
          if (fuelLevel.value >= 10000 && cargoMass.value <=10000) {
             launchStatus.innerHTML = "Shuttle is ready for launch!"
+            fuelStatus.innetText = "enough fuel to launch"
+            cargoStatus.innerText = "cargo mass low enough for launch"
             launchStatus.style.color = "green"
-            faultyItems.style.visibility = "hidden"
+            faultyItems.style.visibility = "visible"
             event.preventDefault();
          }
    }   
